@@ -16,7 +16,6 @@ export class StudentService {
 
 
   getStudentsByCollegeId(): Observable<any[]> {
-    console.log(`${this.API_URL}/collegeId/${this.collegeId}`);
     return this.http.get<any>(
       `${this.API_URL}/collegeId/${this.collegeId}`,
       {
